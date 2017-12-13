@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<title>Обобщение</title>
+<meta charset="utf-8">
+<meta name="keywords" content="Обобщение, HTML, учеба, программирование, бред">
+<meta name="description" content="Обобщаю свои знания по HTML на одной странице">
+<style>
+	h1{font-size:36px; font-family: Monaco, Courier, monospace; color: green; text-shadow:2px 2px 0 #777777; text-transform:capitalize <!-- uppercase вместо capitalize-->;}
+	h2{font-size:30px; color: blue; text-shadow:2px 2px 0 #777777; text-decoration:underline;}
+	code{background:#C0C0C0}
+	b{color:brown;}
+	body{font-size:20px; background:#999999; columns:3 15em;}
+	dt{font-size:23px;  color:brown;}
+	table{border:3px solid black;
+	border-collapse:collapse;
+	<!-- border-spacing:5px; -->
+	}
+	.multiple-table td{padding:2px; padding-left:3px; border: 2px solid black; width:25px; height:20px; text-align:center;
+	<!--vertical-align:bottom;-->
+	<!-- border-left: 2px; -->
+	}
+	.multiple-table td:hover {background-color:#bbbbbb;}
+	.multiple-table td.non-number:hover {background-color:#999999;}
+	caption{caption-side:up;}
+	mark{border-radius:5px; padding:5px;}
+	li{padding:3px;}
+	.square{background-color:red;}
+	.SqMOne{background-color:green;}
+	<!-- a{text-decoration:nene; border-bottom:1px dashed blue;} -->
+	a:link{font-size:22px;}
+	<!-- a:visited{color:#666666; font-size:20px;} -->
+	a:hover{color:cyan; text-decoration:none;}
+	<!-- a:active{font-weight:bold;} -->
+	form input:focus{background-color:#ffdead;}
+	input[type="submit"]{padding:5px; border:2px; border-radius:5px; cursor:pointer;}
+	input[type="checkbox"]{cursor:pointer;}
+	.first-number{font-weight:bold; color:indigo; background-color: dimgray;}
+	.chainsaw-name{font-decoration:overline;}
+	dl {background-image: url("C:\Users\Max\Pictures\прост.PNG");}
+</style>
+<!-- <link href="" rel="stylesheet"> -->
+</head>
+<body>
+<h1><center>То, чему я научился.</center></h1>
+<h2><center>Тема 1.</center></h2>
+<p>Ну вот, допустим, <font size="-10">тебе </font><b>абзац</b></p>
+<p>И <font style="font-size:2em" color="brown"><strong>что</strong></font> тогда ты будешь делать?</p>
+<ol>
+	<li>Убегать
+	<li>Сражаться <font size="-10" color="red">с кем?</font>
+	<ul>
+		<li>Палкой
+		<li>Дубиной
+		<li>Бензопилой
+		<ul>
+			<li>Викингом
+			<li>Бобром
+			<li>Дружба
+			<li>Какой-то еще
+		</ul>
+	</ul>
+</ol>
+<a title="Продолжение выбора" href="#abzats_prodoljenie">Продолжение тут</a>
+<hr>
+<p><dl>
+<dt>Бензопила <span class="chainsaw-name">Викинг</span>:</dt>
+<dd>Волшебная бензопила <a title="Википедия, 'Уж не зомби ли это?'" href="https://ru.wikipedia.org/wiki/Kore_wa_Zombie_Desu_ka%3F">
+	Харуны-чан</a><br>
+	<img src="C:\Users\Max\Documents\Харуна.jpg">
+	<br>
+	<q>Харуна, натяни мне зад, пожалуйста.</q>
+	<br>&copy <cite>Аюма Айкава</cite>
+</dd>
+<dt>Бензопила <span class="chainsaw-name">Бобр</span>:</dt>
+<dd>Бензопила, которая пилит <font size="+3">всё</font>.
+</dd>
+<dt>Бензопила <span class="chainsaw-name">Дружба</span>:</dt>
+<dd>Побеждает в любом споре.</dd>
+</dl></p>
+<hr>
+<br><h3 id="abzats_prodoljenie">Но вернемся к нашему <b>абзацу</b>.</h3>
+<p>Ещё есть варианты поведения:</p>
+<ol start="3">
+	<li>Стирать этот <b>абзац</b>, быстро-быстро нажимая BackSpace.
+	<li><mark>Зажать BackSpace, как умный человек.</mark>
+	<li>H<sub>2</sub>O + (x+2)<sup>2</sup> = 15&nbspДж
+	<br><cite>&nbsp&nbspЯ хз, как это здесь появилось</cite></li>
+</ol>
+<hr><hr>
+<h2><center>Тема 2.</center></h2>
+<br>
+<table border="1" color="blue" class="multiple-table">
+	<caption>Таблица умножения</caption>
+	<tr>
+		<td class="non-number">\</td>
+		<td colspan="11" class="non-number"><font color="green">Первый</font> <font color="blue">множитель</font></td>
+	</tr>
+	<tr>
+		<td rowspan="10" class="non-number"><font color="green">В<br>т<br>о<br>р<br>о<br>й<br></font><font color="blue">м<br>н<br>о<br>ж<br>и<br>т<br>е<br>л<br>ь</font></td>
+		<td class="square first-number">1</td>
+		<td class="first-number">2</td>
+		<td class="SqMOne first-number">3</td>
+		<td class="first-number">4</td>
+		<td class="first-number">5</td>
+		<td class="first-number">6</td>
+		<td class="first-number">7</td>
+		<td class="first-number">8</td>
+		<td class="first-number">9</td>
+		<td class="first-number">10</td>
+		<td class="first-number">11</td>
+	</tr>
+	<tr>
+		<td class="first-number">2</td>
+		<td class="square">4</td>
+		<td>6</td>
+		<td class="SqMOne">8</td>
+		<td>10</td>
+		<td>12</td>
+		<td>14</td>
+		<td>16</td>
+		<td>18</td>
+		<td>20</td>
+		<td>22</td>
+	</tr>
+	<tr>
+		<td class="first-number">3</td>
+		<td>6</td>
+		<td class="square">9</td>
+		<td>12</td>
+		<td class="SqMOne">15</td>
+		<td>18</td>
+		<td>21</td>
+		<td>24</td>
+		<td>27</td>
+		<td>30</td>
+		<td>33</td>
+	</tr>
+	<tr>
+		<td class="first-number">4</td>
+		<td>8</td>
+		<td>12</td>
+		<td class="square">16</td>
+		<td>20</td>
+		<td class="SqMOne">24</td>
+		<td>28</td>
+		<td>32</td>
+		<td>36</td>
+		<td>40</td>
+		<td>44</td>
+	</tr>
+	<tr>
+		<td class="first-number">5</td>
+		<td>10</td>
+		<td>15</td>
+		<td>20</td>
+		<td class="square">25</td>
+		<td>30</td>
+		<td class="SqMOne">35</td>
+		<td>40</td>
+		<td>45</td>
+		<td>50</td>
+		<td>55</td>
+	</tr>
+	<tr>
+		
+		<td class="first-number">6</td>
+		<td>12</td>
+		<td>18</td>
+		<td>24</td>
+		<td>30</td>
+		<td class="square">36</td>
+		<td>42</td>
+		<td class="SqMOne">48</td>
+		<td>54</td>
+		<td>60</td>
+		<td>66</td>
+	</tr>
+	<tr>
+		
+		<td class="first-number">7</td>
+		<td>14</td>
+		<td>21</td>
+		<td>28</td>
+		<td>35</td>
+		<td>42</td>
+		<td class="square">49</td>
+		<td>56</td>
+		<td class="SqMOne">63</td>
+		<td>70</td>
+		<td>77</td>
+	</tr>
+	<tr>
+		
+		<td class="first-number">8</td>
+		<td>16</td>
+		<td>24</td>
+		<td>32</td>
+		<td>40</td>
+		<td>48</td>
+		<td>56</td>
+		<td class="square">64</td>
+		<td>72</td>
+		<td class="SqMOne">80</td>
+		<td>88</td>
+	</tr>
+	<tr>
+		
+		<td class="first-number">9</td>
+		<td>18</td>
+		<td>27</td>
+		<td>36</td>
+		<td>45</td>
+		<td>54</td>
+		<td>63</td>
+		<td>72</td>
+		<td class="square">81</td>
+		<td>90</td>
+		<td class="SqMOne">99</td>
+	</tr>
+	<tr>
+		
+		<td class="first-number">10</td>
+		<td>20</td>
+		<td>30</td>
+		<td>40</td>
+		<td>50</td>
+		<td>60</td>
+		<td>70</td>
+		<td>80</td>
+		<td>90</td>
+		<td class="square">100</td>
+		<td>110</td>
+	</tr>
+</table>
+
+<!--Всякая фигня ко второй теме, бла-бла-бла-->
+
+<hr><hr>
+<h2><center>Заключение.</center></h2>
+<br>
+<center>Просим вас <b>зарегистрироваться</b>.</center>
+<form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+	<label>
+		Введите логин:<br>
+		<input type="text" name="Login" id="NewLog" value="Guest">
+	</label>
+	<br><br>
+	<label for="NewPass">Введите пароль:</label><br>
+	<font size="-2" color="darkcyan">Убедитесь, что никто не увидит, как вы набираете пароль.</font><br>
+	<input type="password" name="Password" id="NewPass">
+	<br><br>
+	Выберите свой аватар:
+	<input type="file" name="avatar">
+	<br><br>
+	Сколько вам лет?<br>
+	<label>
+		<input type="radio" name="Years" value="0-6"> 0-6 лет.<br>
+	</label>
+	<label>
+		<input type="radio" name="Years" value="6-12"> 6-12 лет.<br>
+	</label>
+	<label>
+		<input type="radio" name="Years" value="12-18"> 12-18 лет.<br>
+	</label>
+	<label>
+		<input type="radio" name="Years" value="18+"> Больше 18 лет.<br>
+	</label>
+	<br>
+	Какой контент вы бы хотели видеть у нас?
+	<select name="content" multiple size="5">
+		<option value="ActiveFreeTime">Активный отдых
+		<option value="Science">Наука
+		<option value="FreeTime">Отдых
+		<option value="Family">Семья
+		<option value="Humour">Юмор
+		<option value="AllContent">Всё предоставленное выше
+	</select>
+	<br><br>
+	Где вы живёте?<br>
+	<select name="region">
+		<option value="Non">Не выбрано
+		<option value="Moscow">Москва
+		<option value="SPb">Санкт-Петербург
+		<option value="Ryazan">Рязань
+		<option value="Tula">Тула
+		<option value="Yaroslavl">Ярославль
+		<option value="Rostov">Ростов
+		<option value="Novgorod">Новгород
+		<option value="Voronej">Воронеж
+		<option value="Volgograd">Волгоград
+		<option value="Saratov">Саратов
+		<option value="Murmansk">Мурманск
+		<option value="Arhangelsk">Архангельск
+		<option value="Yekaterinburg">Екатеринбург
+		<option value="Vladivostok">Владивосток
+		<option value="Krasnoyarsk">Красноярск
+		<option value="Krasnodar">Краснодар
+		<option value="Habarovsk">Хабаровск
+		
+	</select>
+	<br><br>
+	<label>
+		Ваше описание:<br>
+		<textarea name="AboutGuest" id="About" rows="4" cols="40">Опишите себя.</textarea>
+	</label>
+	<br>
+	<label>
+	Вы робот?
+	<input type="checkbox" name="AreYouARobot" id="Robot" checked>
+	</label>
+	<br><br>
+	<input type="submit" value="Зарегистрироваться">
+</form>
+<!-- <script src=""></script> -->
+</body>
+</html>
